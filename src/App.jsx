@@ -1,18 +1,29 @@
+import {
+  Navbar,
+  Footer,
+  Home,
+  About,
+  Contact,
+  Course,
+  Teacher,
+} from "./components/Index";
 import { useState } from "react";
 
 import "./App.css";
+import Accordion from "./components/container/Accordion";
 
 function App() {
   return (
-    <>
-      <section>
-        <div className="container mx-auto">
-          <h1 className="font-Sarabun bg-teal-100 font-bold">
-            ผมคือประชาชน ชาวกาญจนบุรี
-          </h1>
-        </div>
-      </section>
-    </>
+    <div className="font-Poppins bg-Solitude">
+      <Navbar />
+      <Home />
+      <About />
+      <Course />
+      <Teacher />
+      <Accordion />
+      <Contact />
+      <Footer />
+    </div>
   );
 }
 

@@ -1,7 +1,11 @@
 import React from "react";
 
 const Course = () => {
-  return <div>Course</div>;
+  return (
+    <div id="courses" className="section">
+      Course
+    </div>
+  );
 };
 
 export default Course;
